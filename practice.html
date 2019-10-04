@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Smart Future</title>
+        <style>
+        body {
+        color: royalblue;   
+        }
+        h1 {
+        font-family:'Courier New', Courier, monospace;
+        font-size: 32px;
+        color:blueviolet
+        }
+        </style>
+    </head>
+    <body>
+        <h1>This is a heading</h1>
+        <hr/>
+        <hr/>
+        <h2>This is also a heading</h2>
+        <h3>Another heading</h3>
+        <h4>Again, a heading</h4>
+        <h5>Never too late for another heading</h5>
+        <h6>The last one, I promise</h6>
+        <p>This is the beginning</p>
+        <p>Of something awesome</p>
+        <p>This is <br /> a line break</p>
+        <p><b>Bold text</b></p>
+        <p><big>Big text</big></p>
+        <p><i>Italic text</i></p>
+        <p><small>Small text</small></p>
+        <p><strong>Strong text</strong></p>
+        <p><sub>Subscripted text</sub></p>
+        <p><sup>Superscripted text</sup></p>
+        <p><ins>Inserted text</ins></p>
+        <p><del>Deleted text</del></p>
+        <button id="color">changeColor!</button>
+        <script>
+        document.getElementById('color').onclick = changeColor;
+        var currentColor = "red";
+        function changeColor() {
+                        if(currentColor =="red") {
+                document.body.style.color = "green";
+                currentColor = "green";
+                        } else {
+                            document.body.style.color = "red";
+                currentColor = "red";
+                        }
+                return currentColor;
+        }
+        </script>
+        <!--This is a comment-->
+    </body>
+</html>
